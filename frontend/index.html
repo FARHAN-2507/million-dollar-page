@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Million Dollar Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">Million Dollar Homepage</h1>
+      <button id="togglePurchaseMode" class="btn">Purchase Pixels</button>
+    </div>
+  </div>
+  <main>
+    <div id="grid"></div>
+  </main>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <h2>Purchase Pixel</h2>
+      <form id="pixelForm">
+        <label for="ownerName">Owner Name:</label>
+        <input type="text" id="ownerName" placeholder="Your name" required />
+        <label for="imageUrl">Image URL:</label>
+        <input type="url" id="imageUrl" placeholder="Image URL" required />
+        <label for="targetUrl">Target URL:</label>
+        <input type="url" id="targetUrl" placeholder="Website URL" required />
+        <label for="altText">Alt Text:</label>
+        <input type="text" id="altText" placeholder="Description" required />
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
